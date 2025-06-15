@@ -6,10 +6,10 @@ import serial
 import time
 import matplotlib.pyplot as plt
 
-# Initialize OCR
+
 reader = easyocr.Reader(['en'], gpu=False)
 
-# Setup Serial for Arduino (adjust COM port if needed)
+
 arduino = serial.Serial('COM5', 9600)
 time.sleep(2)
 
